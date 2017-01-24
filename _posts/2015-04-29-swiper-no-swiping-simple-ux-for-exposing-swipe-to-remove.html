@@ -1,0 +1,36 @@
+---
+layout: post
+status: publish
+published: true
+title: Swiper No Swiping - How We Solved Users' Difficulty with Swipe-to-Remove
+author:
+  display_name: jonathan
+  login: jonathan
+  email: jonathan.green@raizlabs.com
+  url: ''
+author_login: jonathan
+author_email: jonathan.green@raizlabs.com
+wordpress_id: 8127
+wordpress_url: http://www.raizlabs.com/?p=8127
+date: '2015-04-29 10:51:38 -0400'
+date_gmt: '2015-04-29 14:51:38 -0400'
+categories:
+- Design
+- Design
+- iPhone
+tags: []
+comments: []
+---
+<h3>When Users Can't Find a (Basic) Gesture</h3>
+<p>Swipe-to-remove seems like one of the most basic gesture-based UI controls, right up there with tap, scroll, or pinch &amp; zoom... but, as we’ve learned from tons of data, numerous testers, and even more users is that, well, it isn’t.</p>
+<p>iOS on the system level includes swipe-to-remove, and you would assume that everyone knew that gesture. Think of all the users that use Mail or any other mail client for iOS - delete or remove is the most basic of the functions you can do, a common UX practice. The opportunities are endless for this little nugget of hidden UI on our device screens.</p>
+<p>In a recent redesign for a shopping cart experience in <a href="http://www.raizlabs.com/work/bh-photo-ios-mobile-e-commerce/">B&amp;H Photo for iOS</a>, we began to hear feedback and see data that users were having trouble removing items from their cart. Uh oh. Users literally had no idea that swipe-to-remove was something that existed here! We had two options: We could design for users that already knew, or we could try and inform the rest of the users.</p>
+<p>Obviously being the good designers we are, we chose the latter.</p>
+<p>So now we had a problem: how do we solve it without having an “x” for remove on every row? This is a shopping application, we don’t exactly want to <em>entice</em> users to remove those lovely Nikons and Canons that they just added to their carts, we just want to make it easy. <em>Make it easy to remove, but don’t be in the user’s face with it</em> is what we needed. Swipe-to-remove to the rescue... right?</p>
+<p>We designed a swipe control to not only remove items, but also add items to a wish list or see accessories for the item in your cart - but it was hiding in that little window of magic that could not be found. Ugh.</p>
+<h3>A UX Design Fix For A Non-Trivial Problem With Swipe-to-Remove</h3>
+<p>How could we alert users to the existence of these UI controls without having to sacrifice screen real estate or sales for our client? Easy solve! We use the most logical control next to an “x” for remove - the quantity control.</p>
+<p>When the user taps the quantity number of their product - they are presented with a “-/+” next to their current quantity. The simple fix was to swap out the minus when the quantity was 1 (which our data showed was the majority of items in the cart) to a trash can. We also changed the tint of this quantity control UI button to red to reinforce the notion of delete/remove. When tapped, it would slide the cell open exposing Remove, as well as other additional UI controls. If the user added additional items to their quantity, the red circle and trash can would animate back to a blue circle and a "-" to match the "+".</p>
+<p><img class="alignnone size-full wp-image-8128" src="http://www.raizlabs.com/wp-content/uploads/2015/04/BH-small-updown.gif" alt="BH-small-updown" width="400" height="300" /></p>
+<p>This allowed us to keep all the functionality of adding and removing quantity, while also setting us up for an intuitive way to teach users how to swipe-to-remove on future purchases - without needing a coach mark to teach them. After this update was shipped, feedback on this problem stopped coming in and data showed a reduction in hangups on this screen. Hashtag winning! An informative, intuitive, and logical victory for both the business and the users.</p>
+<p><strong>Interested in joining the Raizlabs team making great software? <a href="http://www.raizlabs.com/company/jobs/?utm_source=blog&amp;utm_medium=regblog&amp;utm_campaign=ps">We're hiring designers in Boston and SF</a>.</strong></p>

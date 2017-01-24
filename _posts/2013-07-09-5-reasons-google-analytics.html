@@ -1,0 +1,108 @@
+---
+layout: post
+status: publish
+published: true
+title: 5 Reasons to Use Google Analytics
+author:
+  display_name: ''
+  login: ''
+  email: ''
+  url: ''
+excerpt: "<p dir=\"ltr\" style=\"text-align: left\">Google took web analytics by storm,
+  but up until recently, their mobile offering was always a bit clunky. For our mobile
+  client work we’ve historically recommended alternative solutions to Google Analytics
+  - i.e. <a href=\"http://www.localytics.com/\">Localytics</a> (we built their SDK)
+  or <a href=\"http://www.flurry.com/\">Flurry</a>, which have provided great mobile
+  analytics services for a number of years. That being said, it’s worth taking a look
+  at the new kid on the block: enter the new Google Analytics for Mobile! The new
+  Google Analytics is simple to integrate into your apps, and the online interface
+  is astounding. If that’s not enough, Google also provides easy exporting and APIs
+  to access your report data. And best of all, it’s free. Here are our top 5 reasons
+  for why you should consider Google Analytics in your own apps!</p>\r\n\r\n<h2><strong>#1
+  - Easy to integrate</strong></h2>\r\n<a href=\"http://www.raizlabs.com/cms/wp-content/uploads/2013/07/1.png\"><img
+  class=\"size-medium wp-image-5205 alignright\" style=\"border: 1px solid black;margin:
+  0px 10px\" title=\"App Overview\" alt=\"\" src=\"http://www.raizlabs.com/cms/wp-content/uploads/2013/07/1-300x286.png\"
+  width=\"300\" height=\"286\" /></a>\r\n<p dir=\"ltr\">Integrating the new SDK is
+  extremely easy. On Android, simply add a couple permissions, a simple XML file with
+  a few settings, and call a single method for each event. On iOS, set a few settings
+  in your application delegate, and call a method for each event. Tagging events,
+  screens, or other basic events are really basic single lines of code, such as:</p>\r\n\r\n<pre>EasyTracker.getInstance().sendEvent(\"ui_action\",
+  \"button_press\", \"play_button\", opt_value);</pre>\r\n<p dir=\"ltr\">or:</p>\r\n\r\n<pre>EasyTracker.getInstance().sendTiming(loadTime,
+  \"resources\", \"high_scores\", null);</pre>\r\n<p dir=\"ltr\">This is all done
+  without any networking or threading code. The Google Analytics SDK takes care of
+  lots of things for you, including sending your events in the background. The SDK
+  will batch up events and send them all at once to save power. Don’t have a network
+  connection? Google will take care of that too by storing your events and sending
+  them when a connection becomes available.</p>\r\n<p dir=\"ltr\">As a bonus Google
+  Analytics also marks all these events with additional data as well such as device
+  model, OS version, app version, user location, screen resolution, and network provider.
+  Other tags are also similarly as easy, requiring only one method call.</p>\r\n\r\n<h2><strong>#2
+  - Awesome Dashboards and Reports</strong></h2>\r\n<p dir=\"ltr\">"
+wordpress_id: 5204
+wordpress_url: http://www.raizlabs.com/?p=5204
+date: '2013-07-09 16:04:45 -0400'
+date_gmt: '2013-07-09 21:04:45 -0400'
+categories:
+- Company News
+tags:
+- Analytics
+- Android
+- app
+- apps
+- boston
+- Business
+- Engagement
+- Google Analytics
+- mobile
+- Raizlabs
+- SDK
+comments: []
+---
+<p dir="ltr" style="text-align: left">Google took web analytics by storm, but up until recently, their mobile offering was always a bit clunky. For our mobile client work we’ve historically recommended alternative solutions to Google Analytics - i.e. <a href="http://www.localytics.com/">Localytics</a> (we built their SDK) or <a href="http://www.flurry.com/">Flurry</a>, which have provided great mobile analytics services for a number of years. That being said, it’s worth taking a look at the new kid on the block: enter the new Google Analytics for Mobile! The new Google Analytics is simple to integrate into your apps, and the online interface is astounding. If that’s not enough, Google also provides easy exporting and APIs to access your report data. And best of all, it’s free. Here are our top 5 reasons for why you should consider Google Analytics in your own apps!</p>
+<h2><strong>#1 - Easy to integrate</strong></h2>
+<p><a href="http://www.raizlabs.com/cms/wp-content/uploads/2013/07/1.png"><img class="size-medium wp-image-5205 alignright" style="border: 1px solid black;margin: 0px 10px" title="App Overview" alt="" src="http://www.raizlabs.com/cms/wp-content/uploads/2013/07/1-300x286.png" width="300" height="286" /></a></p>
+<p dir="ltr">Integrating the new SDK is extremely easy. On Android, simply add a couple permissions, a simple XML file with a few settings, and call a single method for each event. On iOS, set a few settings in your application delegate, and call a method for each event. Tagging events, screens, or other basic events are really basic single lines of code, such as:</p>
+<pre>EasyTracker.getInstance().sendEvent("ui_action", "button_press", "play_button", opt_value);</pre>
+<p dir="ltr">or:</p>
+<pre>EasyTracker.getInstance().sendTiming(loadTime, "resources", "high_scores", null);</pre>
+<p dir="ltr">This is all done without any networking or threading code. The Google Analytics SDK takes care of lots of things for you, including sending your events in the background. The SDK will batch up events and send them all at once to save power. Don’t have a network connection? Google will take care of that too by storing your events and sending them when a connection becomes available.</p>
+<p dir="ltr">As a bonus Google Analytics also marks all these events with additional data as well such as device model, OS version, app version, user location, screen resolution, and network provider. Other tags are also similarly as easy, requiring only one method call.</p>
+<h2><strong>#2 - Awesome Dashboards and Reports</strong></h2>
+<p dir="ltr"><a id="more"></a><a id="more-5204"></a></p>
+<p style="text-align: left"> <a href="http://www.raizlabs.com/cms/wp-content/uploads/2013/07/3.png"><img class="size-medium wp-image-5207 alignright" style="border: 1px solid black;margin-top: 0px;margin-bottom: 0px" title="App Versions" alt="" src="http://www.raizlabs.com/cms/wp-content/uploads/2013/07/3-300x197.png" width="300" height="197" /></a>Right out of the box, Google Analytics includes an assortment of really powerful dashboards and reports. The reports and dashboard will show things like active users, new users, session lengths, and all sorts of other metrics. Most of these views are interactive, and you can view graphs in various different ways. All of the reports are filterable by things like OS, sessions with transactions, or device model. Most interestingly, you can run different metrics against each other, such as looking at screens per session versus app version to see if your changes are positively effecting your users.</p>
+<h2>#3 - Engagement Flow</h2>
+<p dir="ltr"><strong><a href="http://www.raizlabs.com/cms/wp-content/uploads/2013/07/5.png"><img class="size-medium wp-image-5209 alignright" style="border: 1px solid black;margin: 0px 10px" title="Engagement Flow A" alt="" src="http://www.raizlabs.com/cms/wp-content/uploads/2013/07/5-300x200.png" width="300" height="200" /></a></strong></p>
+<p dir="ltr">One of the most powerful features of Google Analytics is their Engagement Flow report. This report will</p>
+<p dir="ltr">demonstrate how users proceed through your app by displaying individual screens and where users navigate next. This also includes how many people leave the app from each individual screen (the red tails), so you can see where you are losing users. By default this screen will start by categorizing users by what operating system they are using, but it’s fully customizable so you can change it to be app version, screen resolution, OS version, or whatever is most relevant for you, and hovering over items will display even more details. Similarly to the other reports, you can also filter this report by device, returning users, sessions with transactions, etc.</p>
+<p dir="ltr"><img class="size-medium wp-image-5215 alignright" style="border: 1px solid black;margin: 0px 10px" title="Engagement Flow B" alt="" src="http://www.raizlabs.com/cms/wp-content/uploads/2013/07/10-300x125.png" width="300" height="125" /></p>
+<p dir="ltr">If screen views aren’t enough, this report also supports events and all their tags, so you can see actions your users are taking. In addition,  you can even look at both simultaneously. Obviously, this screen can quickly become pretty complex. By right clicking on individual nodes, you can hone in on traffic running through one individual node, or highlight the paths through that particular node to help you see the data better.</p>
+<h2><strong>#4 - Exporting and Alerts</strong></h2>
+<p dir="ltr"><a href="http://www.raizlabs.com/cms/wp-content/uploads/2013/07/11.png"><img class="size-medium wp-image-5216 alignright" style="border: 1px solid black;margin: 0px 10px" title="Create an Alert" alt="" src="http://www.raizlabs.com/cms/wp-content/uploads/2013/07/11-300x241.png" width="300" height="241" /></a></p>
+<p dir="ltr">The number detailed graphs provided are nearly limitless, but if that’s not enough, you can export the raw data to Excel, Google Docs, or CSV. Each report can also be exported to a PDF so you can share the views and graphs with someone without giving them total access to your dashboards. You can also have Google Analytics email a copies of the PDF daily, weekly, monthly, or quarterly. This can be handy if you don’t want to have to remember to go check a particular report every day or if you’d like to send someone else a copy. If this still isn’t enough for you, Google also provides an API for you to access the data (see <a href="https://developers.google.com/analytics/devguides/reporting/">the documentation</a>).</p>
+<p dir="ltr">You can also add custom alerts to notify you when certain events occur. For example, you could set up alerts by email or text to let you know when your traffic drops or increases by a certain amount, or even by a certain percent. Like most of the other options, there are tons of metrics and filters available.</p>
+<h2><strong>#5 - It’s Free</strong></h2>
+<p dir="ltr">Google Analytics provides an extremely generous free plan, making it great for independent developers or small companies. There are only a couple limits:</p>
+<p dir="ltr">For one, you’re limited to 10 million hits per month, where a hits is defined as pretty much any action you tag, such as screen views, events, timings, etc. Since there are so many features, if you try to track every single thing, you could be using a good chunk of hits for each user. If you have tons of users, this could add up fast. If you still think this might be an issue, you can look into setting up <a href="https://developers.google.com/analytics/resources/concepts/gaConceptsSampling?hl=en">sampling</a> (<a href="https://developers.google.com/analytics/devguides/collection/android/v2/advanced?hl=en#sampling">Android</a> <a href="https://developers.google.com/analytics/devguides/collection/ios/v2/advanced#sampling">iOS</a>), which basically allows you to send some fraction of the data via a single line of code.</p>
+<p dir="ltr">Secondly, other than the real-time view, the rest of your data with be “24+ hours” old. Some devices may hang on to tags when the network is unavailable, and post them back later. Google then has to do some processing, probably to get these tags lined up with all the other tracking info and get them into your reports. From what we’ve seen, this still seems to happen just about 24 hours later. Getting such detailed data a day late probably isn’t such a big deal though. It’s also worth noting that their real-time view will show you live data on screen views, app versions, location, and device distribution, and goes up to 30 minutes back.</p>
+<p dir="ltr">All in all, these aren’t major setbacks, and with the amazing amount of features and data that you’re getting, it’s an incredible offering. Of course, there are tons of other reasons why you should be using Google Analytics, but we can only describe so much. Here are a few other quick notes on some other cool features:</p>
+<ul>
+<li>
+<p dir="ltr">Automatic crash reporting: Simply set a boolean in XML or programmatically and Google Analytics will track crashes and exceptions (and their descriptions), which you can look at compared to other metrics such as app version.</p>
+</li>
+<li>
+<p dir="ltr"><a href="https://developers.google.com/analytics/devguides/collection/android/v2/usertimings">App Timings</a>: This allows developers to tag lengths of time in a single line of code. You can label timings with a few different tags. There’s also a report set up for this so you can see average timings for each event and compare it to other metrics. This could be used to measure load times for different pages or data, or something like how long it takes a users to respond to a certain dialog. Combined with other Google Analytics features, this could even be used to do some usability testing with end users.</p>
+</li>
+<li>
+<p dir="ltr"><a href="https://developers.google.com/analytics/devguides/collection/android/v2/social">Social Interactions</a>: This allows you to tag when users take certain social interactions, such as +1’ing or Tweeting items in your app, and view these actions on graphs.</p>
+</li>
+<li>
+<p dir="ltr">Acquisitions and Referrals: If you have links that may open your app via URLs, you can embed extra parameters, and send those to the tracker to keep track of what is causing users to open your app. On Android, you can also embed parameters into your “Get it on the Play Store” links. If the user installs via this link, your application can receive these parameters to tell what advertisements or other links are generating your installs.</p>
+</li>
+<li>
+<p dir="ltr">Simple <a href="https://developers.google.com/analytics/devguides/collection/protocol/v1/">Measurement Protocol</a>: If mobile and the web aren’t your only cup of tea, there are simple HTTP endpoints you can hit to log things manually. You could also use this in conjunction with say, your website printing coupons, to track if the user actually uses it. Just embed the client ID into your coupon barcode and have the register read it out and send a post.</p>
+</li>
+<li>
+<p dir="ltr">Multiple Trackers - Say you want to bind your app to two different Google Analytics projects - maybe one to track actions that apply to all your apps and one for each app specifically. Google Analytics will easily support multiple trackers bound to different tracking IDs, you just need to keep a reference to each.</p>
+</li>
+</ul>
+<p dir="ltr">As we said before, Google Analytics isn’t the only mobile analytics tool on the market (<a href="http://www.localytics.com/">Localytics</a> and <a href="http://www.flurry.com/">Flurry</a> both provide stellar offerings), but it certainly deserves a second look!</p>
